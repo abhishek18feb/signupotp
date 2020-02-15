@@ -1,0 +1,10 @@
+//Actions for signup with opt
+export const SENT_EMAIL_BACKEND = 'SENT_EMAIL_BACKEND'
+export const RECEIVE_EMAIL_SUCCESS = 'RECEIVE_EMAIL_SUCCESS'
+export const RECEIVE_EMAIL_FAIL = 'RECEIVE_EMAIL_FAIL'
+export const DISABLE_SIGNUP_OTP_SEND = 'DISABLE_SIGNUP_OTP_SEND'
+
+
+
+
+
