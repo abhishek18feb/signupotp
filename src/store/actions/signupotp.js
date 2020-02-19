@@ -29,3 +29,10 @@ export const receiveEmailFail  = (receiveEmailResponse, receiveEmailResponseMsg)
 	}
 }
 
+export const sendOtpBackend = (formData) => {
+	return {
+		type:actionTypes.SENT_OTP_BACKEND,
+		formData: formData,
+	}
+}
+

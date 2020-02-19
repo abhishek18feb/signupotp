@@ -1,0 +1,9 @@
+{
+    "appConfig": {
+        "baseEndpoint": "https://localhost:8080",
+        "apiKey": "XRTT",
+        "secretKey": "Basic RzYxM0dKRnVhDVhfjdkEdPRE5ZajdBQXhzM0pENVhESkw2ZU06eE9LVFhGN2dIVlpHdWVGRw==",
+        "smsession_needed": true,
+        "allow_Email_Edit":false
+    }
+}

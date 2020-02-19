@@ -1,0 +1,587 @@
+{
+  "login": {
+    "headers": {
+      "mainPage": "Login Here",
+      "verifyMethodsPage": "Please choose the following option",
+      "voicePage": "Verification for registered phone number",
+      "emailPage": "Email passcode (otp) sent to registered email",
+      "smsPage": "SMS passcode (otp) sent to registered Phone number",
+      "twoFAEnroll": "Enrollment is required",
+      "twoFAVerification": "Additional Verification is Required"
+    },
+    "partialRegSuccessPage": {
+      "message": "User successfully enrolled",
+      "buttonLabel": {
+        "login": "Click Here to Login"
+      }
+    },
+    "mainPage": {
+      "textLabel": {
+        "userName": "Username",
+        "password": "Password"
+      },
+      "buttonLabel": {
+        "loginSubmit": "login",
+        "registered": "Register"
+      }
+    },
+    "verifyMethodsPage": {
+      "smsOTP": "Choose SMS",
+      "emailOTP": "Choose EMAIL",
+      "voiceOTP": "Choose  VOICE",
+      "quesAndAns": "Choose Question and Answer Challenge",
+      "textLabel": {},
+      "buttonLabel": {
+        "submit": "Submit"
+      }
+    },
+    "emailPage": {
+      "textLabel": {},
+      "buttonLabel": "Submit Email OTP"
+    },
+    "smsPage": {
+      "textLabel": {},
+      "buttonLabel": "Submit SMS OTP"
+    },
+    "quesAndAnsPage": {
+      "textLabel": {
+        "question": "QUESTION",
+        "answer": "Answer"
+      },
+      "buttonLabel": {
+        "submit": "Submit"
+      }
+    },
+    "successpage": {
+      "message": "User Login Successfully",
+      "buttonLabel": {
+        "update": "Click Here to Update"
+      }
+    },
+    "failurepage": {
+      "message": "User Login failure.",
+      "buttonLabel": {
+        "goback": "Click Here to go back"
+      }
+    },
+    "others": {
+      "didNotReceiveCall": "Didn't receive any call yet ?",
+      "didNotReceiveSMS": "Didn't receive any sms yet ?",
+      "didNotReceiveEmail": "Didn't receive any email yet ?",
+      "dontHaveAccount": "Don't have a account",
+      "resendCall": "Call again",
+      "resendSms": "Resend SMS",
+      "resendEmail": "Resend Email"
+    },
+    "errors": {
+      "verifyMethod": "Please make a selection.",
+      "defaultError": "Generic error"
+    }
+  },
+  "registration": {
+    "mainPage": {
+      "textLabel": {
+        "emailAddress": "Email Address",
+        "reenterEmailAddress": "Re-Enter-Email Address",
+        "userName": "User Name",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "password": "Password",
+        "reenterPassword": "Re-Enter Password",
+        "countryCode": "Country Code",
+        "phoneNumber": "Phone Number",
+        "forceSetup": "Force Stepup",
+        "isSmsEnabled": "Is sms enabled"
+      },
+      "buttonLabel": {
+        "processing": "Processing",
+        "register": "Register"
+      }
+    },
+    "headers": {
+      "verifyMethodsPage": "Please choose the following option",
+      "voicePage": "Verification for registered phone number",
+      "emailPage": "Enter passcode (otp) sent to registered email",
+      "smsPage": "Enter passcode (otp) sent to registered phone number",
+      "twoFAVerification": "Additional Verification is Required"
+    },
+    "others": {
+      "didNotReceiveCall": "Didn't receive any call yet ?",
+      "didNotReceiveSMS": "Didn't receive any sms yet ?",
+      "didNotReceiveEmail": "Didn't receive any email yet ?",
+      "dontHaveAccount": "Don't have a account",
+      "resendCall": "Call again",
+      "resendSms": "Resend SMS",
+      "resendEmail": "Resend Email"
+    },
+    "emailPage": {
+      "textLabel": {},
+      "buttonLabel": "Submit Email OTP"
+    },
+    "smsPage": {
+      "textLabel": {},
+      "buttonLabel": "Submit SMS OTP"
+    },
+    "quesAndAnsPage": {
+      "textLabel": {
+        "question": "QUESTION",
+        "answer": "Answer"
+      },
+      "buttonLabel": {
+        "submit": "Submit"
+      }
+    },
+    "editPhonePage": {
+      "textLabel": {
+        "countryCode": "Country Code",
+        "phoneNumber": "Phonenumber",
+        "isSmsEnabled": "Is sms enabled"
+      },
+      "buttonLabel": {
+        "skip": "Skip",
+        "submit": "Submit"
+      }
+    },
+    "successpage": {
+      "message": "User successfully enrolled",
+      "buttonLabel": {
+        "login": "Click Here to Login"
+      }
+    },
+    "failurepage": {
+      "message": "User Registration failure.",
+      "buttonLabel": {
+        "goback": "Click Here to go back"
+      }
+    }
+  },
+  "fusername": {
+    "mainPage": {
+      "textLabel": {
+        "emailid": "Email ID"
+      },
+      "buttonLabel": {
+        "emailVerifying": "Verifying",
+        "emailSubmit": "Email Verify"
+      }
+    },
+    "headers": {
+      "verifyMethodsPage": "Please choose the following option",
+      "voicePage": "Verification for registered phone number",
+      "emailPage": "Enter passcode (otp) sent to registered email",
+      "smsPage": "Enter passcode (otp) sent to registered phone number",
+      "twoFAVerification": "Additional Verification is Required",
+      "emailPageAdditionalHeader": "Email verification additional header",
+      "verifyMethodsPageAdditionalHeader": "2FA Verification additional header",
+      "voicePageAdditionalHeader": "Voice verification",
+      "smsPageAdditionalHeader": "SMS verification"
+    },
+    "verifyMethodsPage": {
+      "smsOTP": "Choose SMS",
+      "emailOTP": "Choose EMAIL",
+      "voiceOTP": "Choose  VOICE",
+      "quesAndAns": "Verify with Question and Answer Challenge",
+      "textLabel": {},
+      "buttonLabel": {
+        "submit": "Submit"
+      }
+    },
+    "others": {
+      "didNotReceiveCall": "Didn't receive any call yet ?",
+      "didNotReceiveSMS": "Didn't receive any sms yet ?",
+      "didNotReceiveEmail": "Didn't receive any email yet ?",
+      "dontHaveAccount": "Don't have a account",
+      "resendCall": "Call again",
+      "resendSms": "Resend SMS",
+      "resendEmail": "Resend Email"
+    },
+    "errors": {
+      "verifyMethod": "Please make a selection.",
+      "defaultError": "Generic error"
+    },
+    "emailPage": {
+      "textLabel": {},
+      "buttonLabel": "Submit Email OTP"
+    },
+    "smsPage": {
+      "textLabel": {},
+      "buttonLabel": "Submit SMS OTP"
+    },
+    "quesAndAnsPage": {
+      "buttonLabel": {
+        "submit": "Submit Answer"
+      }
+    },
+    "successpage": {
+      "message": "Successfully recovered. Please check email address.",
+      "buttonLabel": {
+        "login": "Click Here to Login"
+      }
+    }
+  },
+  "fpassword": {
+    "mainPage": {
+      "textLabel": {
+        "emailid": "Username/Email"
+      },
+      "buttonLabel": {
+        "emailVerifying": "Verifying",
+        "emailSubmit": "Verify"
+      }
+    },
+    "passwordResetPage": {
+      "textLabel": {
+        "newPassword": "New Password",
+        "reenterNewPassword": "Re-Enter Password"
+      },
+      "buttonLabel": {
+        "change": "Change Password"
+      }
+    },
+    "headers": {
+      "verifyMethodsPage": "Please choose the following option",
+      "voicePage": "Verification for registered phone number",
+      "emailPage": "Enter passcode (otp) sent to registered email",
+      "smsPage": "Enter passcode (otp) sent to registered phone number",
+      "twoFAVerification": "Additional Verification is Required",
+      "emailPageAdditionalHeader": "Email verification additional header",
+      "verifyMethodsPageAdditionalHeader": "2FA Verification additional header",
+      "passwordResetPageAdditionalHeader": "Password Reset additional header",
+      "voicePageAdditionalHeader": "Voice verification",
+      "smsPageAdditionalHeader": "SMS verification",
+      "questionsPageAdditionalHeader": "Verification by Questions"
+    },
+    "verifyMethodsPage": {
+      "smsOTP": "Choose SMS",
+      "emailOTP": "Choose EMAIL",
+      "voiceOTP": "Choose  VOICE",
+      "quesAndAns": "Verify with Question and Answer Challenge",
+      "textLabel": {},
+      "buttonLabel": {
+        "submit": "Submit"
+      }
+    },
+    "others": {
+      "didNotReceiveCall": "Didn't receive any call yet ?",
+      "didNotReceiveSMS": "Didn't receive any sms yet ?",
+      "didNotReceiveEmail": "Didn't receive any email yet ?",
+      "dontHaveAccount": "Don't have a account",
+      "resendCall": "Call again",
+      "resendSms": "Resend SMS",
+      "resendEmail": "Resend Email"
+    },
+    "emailPage": {
+      "textLabel": {},
+      "buttonLabel": "Submit Email OTP"
+    },
+    "smsPage": {
+      "textLabel": {},
+      "buttonLabel": "Submit SMS OTP"
+    },
+    "quesAndAnsPage": {
+      "textLabel": {
+        "question": "QUESTION",
+        "answer": "Answer"
+      },
+      "buttonLabel": {
+        "submit": "Submit"
+      }
+    },
+    "successpage": {
+      "message": "Password Update is Successful.",
+      "buttonLabel": {
+        "login": "Click Here to Login"
+      }
+    },
+    "failurepage": {
+      "message": "Password Update is Unsuccessful.",
+      "buttonLabel": {
+        "fpassword": "Click Here Change Password"
+      }
+    }
+  },
+  "update": {
+    "mainPage": {
+      "textLabel": {
+        "emailAddress": "Email",
+        "userName": "UserName",
+        "password": "Current Password",
+        "phonenumber": "Phone Number",
+        "secondaryPhonenumber": "Secondary Phone Number",
+        "questions": "Security Questions and Answers"
+      }
+    },
+    "updatePasswordPage": {
+      "textLabel": {
+        "username": "Username",
+        "oldPassword": "Old Password",
+        "newPassword": "New Password",
+        "reenterPassword": "Re-Enter Password"
+      },
+      "buttonLabel": {
+        "save": "Save",
+        "cancel": "Cancel"
+      }
+    },
+    "updateVoice": {
+      "buttonLabel": "Cancel"
+    },
+    "updateEmailPage": {
+      "textLabel": {
+        "existingEmail": "Existing Email",
+        "newEmail": "New Email",
+        "reEnterNewEmail": "Re-Enter Email"
+      },
+      "buttonLabel": {
+        "save": "Save",
+        "cancel": "Cancel",
+        "updating": "Updating"
+      }
+    },
+    "updateUsernamePage": {
+      "textLabel": {
+        "existingUsername": "Existing Username",
+        "newUsername": "New User Name"
+      },
+      "buttonLabel": {
+        "save": "Save",
+        "cancel": "Cancel"
+      }
+    },
+    "updatePhonenumberPage": {
+      "textLabel": {
+        "countryCode": "Country Code",
+        "phoneNumber": "Phonenumber",
+        "isSmsEnabled": "Is sms enabled"
+      },
+      "buttonLabel": {
+        "save": "Save",
+        "cancel": "Cancel"
+      }
+    },
+    "UpdatequesAndAnsPage": {
+      "textLabel": {
+        "question": "QUESTION",
+        "answer": "Answer"
+      },
+      "buttonLabel": {
+        "submit": "Submit",
+        "save": "Save",
+        "cancel": "Cancel"
+      }
+    },
+    "headers": {
+      "verifyMethodsPage": "Please choose the following option",
+      "voicePage": "Verification for registered phone number",
+      "emailPage": "Enter passcode (otp) sent to registered email",
+      "smsPage": "Enter passcode (otp) sent to registered phone number",
+      "twoFAVerification": "Additional Verification is Required",
+      "mainHeader": "To update your user profile, select from the options below by clicking the edit icon."
+    },
+    "verifyMethodsPage": {
+      "smsOTP": "Choose SMS",
+      "emailOTP": "Choose EMAIL",
+      "voiceOTP": "Choose VOICE",
+      "quesAndAns": "Verify with Question and Answer Challenge",
+      "textLabel": {},
+      "buttonLabel": {
+        "submit": "Submit"
+      }
+    },
+    "emailPage": {
+      "textLabel": {},
+      "buttonLabel": "Submit Email OTP"
+    },
+    "smsPage": {
+      "textLabel": {},
+      "buttonLabel": "Submit SMS OTP"
+    }
+  },
+  "errors": {
+    "CHALLENGE_EMAIL": "Invalid Email OTP",
+    "CHALLENGE_SMS": "Invalid Sms OTP",
+    "CHALLENGE_VOICE": "Invalid Voice OTP",
+    "CHALLENGE_QUESTION": "Invalid Security Answer",
+    "LOCKOUT": "User Account is locked out",
+    "UNREACHABLE": "Phone is unreachable",
+    "UNAUTHORIZED": "Unable to login using the provided credentials",
+    "401": "Invalid Credentials to access apigee",
+    "404": "URL not found",
+    "500": "Server Error",
+    "1000": "Password change failed.",
+    "1001": "Password is too short.",
+    "1002": "Password is too long.",
+    "1003": "The old password is bad.",
+    "1004": "Password has already been used.",
+    "1005": "Password is too similar to a previous password.",
+    "1006": "Password has too many repeating characters.",
+    "1007": "Password contains a disallowed word from the password dictionary.",
+    "1008": "Password has too few alphabetic characters.",
+    "1009": "Password has too few numeric characters.",
+    "1010": "Password has too few alphanumeric characters.",
+    "1011": "Password has too few punctuation mark characters.",
+    "1012": "Password has too few non-printable characters.",
+    "1013": "Password has too few non-alphanumeric characters.",
+    "1014": "Password contains text that matches too many consecutive characters in the user's directory entry.",
+    "1015": "The grace period has been exceeded for allowing user login after the user's password has expired.",
+    "1022": "Password has too few lower case letters.",
+    "1023": "Password has too few upper case letters.",
+    "1024": "Password cannot contain lower case letters.",
+    "1025": "Password cannot contain upper case letters.",
+    "1026": "Password cannot contain digit characters.",
+    "1027": "Password cannot contain punctuation characters.",
+    "1028": "Password cannot contain non-printable characters.",
+    "1029": "Password cannot contain non-alphanumeric characters.",
+    "1030": "Password cannot contain alphanumeric characters.",
+    "1031": "Password must not match the disallowed regular expression",
+    "1032": "Password does not match the required regular expression",
+    "1202": "Invalid session error. The session being requested or handled is invalid.",
+    "1700": "Invalid verification key.",
+    "1701": "Invalid userkey for the given verification key.",
+    "1702": "User activation not allowed for users who have not completed the enrollment",
+    "1210": "Client IP Address invalid.",
+    "1552": "User already exists",
+    "1553": "User exists, but linked to another site.",
+    "1554": "User is already linked to this site.",
+    "1555": "User name already exist",
+    "1556": "User name/email combination already exists",
+    "1601": "Missing Input Data Error. Required data elements are missing in the request.",
+    "1602": "Input Data Error. Enrollment payload Data too large",
+    "1604": "Input Data Error: Username/email clashes with an existing data or both are provided as same value",
+    "1654": "User challenge questions invalid.",
+    "1655": "Multiple challenge questions from same group.",
+    "1656": "All challenge answers are the same.",
+    "1657": "Cannot reuse previous challenge question(s)",
+    "1658": "2FA challenge is required to proceed profile update.",
+    "2101": "Generic ticket error",
+    "2102": "Missing ticket",
+    "2103": "Expired ticket. The ticket has expired.",
+    "2151": "Generic token error",
+    "2152": "Missing token",
+    "2153": "Expired token. The token has expired.",
+    "2154": "The supplied token cannot be found and should be considered invalid.",
+    "2251": "Generic Invalid Input",
+    "2259": "This request requires valid phone number and 'smsenabled' be passed as false.",
+    "2258": "This request requires valid phone number and 'smsenabled' be passed as true.",
+    "2252": "Missing email address.",
+    "2254": "Missing phone number.",
+    "2255": "Missing password",
+    "2261": "Duplicate email address. The provided email address already exists.",
+    "2262": "Duplicate phone number",
+    "2264": "This request requires valid phone number.",
+    "2271": "Invalid email address.",
+    "2272": "Invalid username format",
+    "2273": "Invalid phone format. Phone numbers should be numeric only.",
+    "2281": "Invalid password format",
+    "2256": "Missing security answers.",
+    "2260": "Missing secondary email address.",
+    "2303": "User not found. The provided username was not found.",
+    "2304": "User not active",
+    "2311": "User not linked to site.",
+    "2312": "User not verified for site",
+    "2313": "User suspended for site",
+    "2314": "User account suspended temporarily, please try after sometime",
+    "2321": "User in locked status. Please call Support",
+    "2324": "User is not locked. Please continue with the normal flow, no need to unlock the user",
+    "2322": "User status invalid",
+    "2341": "Unable to change password",
+    "2352": "OTP Expired. The provided OTP does not match our records.",
+    "2353": "Invalid OTP. The provided OTP does not match our records.",
+    "2357": "Enrollment not completed.",
+    "2354": "Missing User Name.",
+    "2355": "Missing User Key.",
+    "2360": "Username cannot include spaces and the following special characters /\\;*()><'.Length should be between 8 to 50 characters.",
+    "2401": "Generic authentication error. The data failed basic authentication.",
+    "2400": "Authentication Failed.",
+    "2402": "User authentication failed",
+    "2411": "Invalid challenge type.",
+    "2421": "Operation Failed - due to system error 2421.",
+    "2422": "Enrollment cannot proceed, due to system error 2422.",
+    "2423": "Enrollment cannot proceed - High Risk - Challenge requested",
+    "2356": "2FA Not Required",
+    "2451": "Generic site level error",
+    "2452": "Missing Site ID",
+    "2453": "Site not found. The provided site ID was not found.",
+    "2454": "Site does not support the given Authentication type",
+    "2455": "Enrollment pre-authorization failed.",
+    "2456": "Site does not support email update",
+    "2457": "Site does not support username update",
+    "2257": "Site does not support the given option.",
+    "2461": "Entity disabled",
+    "2462": "Site not linked to entity",
+    "3000": "Site under maintenance",
+    "4000": "Internal error, contact technical support",
+    "4001": "Service is unavailable, contact technical support",
+    "4002": "RSA systems are not available and DSU is in degraded mode with restrictions",
+    "2412": "Special characters are not allowed",
+    "2413": "Invalid question number format",
+    "2414": "User Phone verification failed.",
+    "2263": "Duplicate UserName Provided. The provided username already exists.",
+    "2305": "Invalid User Status",
+    "2306": "User exists, but credential verification is pending.",
+    "2307": "This operation cannot be completed as the user profile does not have valid email address. Please contact our Support Team.",
+    "4003": "User credentials verification failed/incomplete.",
+    "1659": "2FA challenge verification failed/incomplete.",
+    "1660": "Request cannot be processed with the given type query parameter value.",
+    "1661": "Request cannot be processed with the given transaction type.",
+    "6000": "Otp Expired",
+    "6001": "No of failure Attempts Exceeded Limit. OTP Locked.",
+    "6002": "Sms must be enabled for verification",
+    "7001": "Invalid verification flag for an auto-generated email.",
+    "7002": "Invalid verification flags for an empty or default phone number.",
+    "2265": "Missing/Blank First Name or Last Name.",
+    "2266": "First name/last name contains invalid/special characters - Names can have only ',.-! characters following an alphanumeric"
+  },
+  "passwordPolicies": [
+    {
+      "rulename": "uppercase",
+      "rule": "Must have 1 Upper Case Alphabet",
+      "pattern": "[A-Z]"
+    },
+    {
+      "rulename": "lowercase",
+      "rule": "Must have 1 Lower Case Alphabet",
+      "pattern": "[a-z]"
+    },
+    {
+      "rulename": "numeral",
+      "rule": "Must have 1 Numeral Case Alphabet",
+      "pattern": "[0-9]"
+    },
+    {
+      "rulename": "minchar",
+      "rule": "Minimum 8 characters required",
+      "pattern": "[.*]{8,}"
+    },
+    {
+      "rulename": "maxchar",
+      "rule": "Maximum of 50 characters only",
+      "pattern": "[.*]{8,50}"
+    },
+    {
+      "rulename": "specialchar",
+      "rule": "Must have 1 Special Character [-@#$%^&]",
+      "pattern": "[-@#$%^&]"
+    },
+    {
+      "rulename": "moreThanThreeSameNumber",
+      "rule": "Must not have more than 3 same number",
+     "pattern": "(?!.*?([0-9])\\1{3})([0-9]){3,50}"
+    },
+    {
+      "rulename": "moreThanThreeSameLowerCaseCharacter",
+      "rule": "Must not have more than 3 same Lower Case Alphabet",
+      "pattern": "(?!.*?([a-z])\\1{3})([a-z]){3,50}"
+    },
+    {
+      "rulename": "moreThanThreeSameUpperCaseCharacter",
+      "rule": "Must not have more than 3 same Upper Case Alphabet",
+      "pattern": "(?!.*?([A-Z])\\1{3})([A-Z]){3,50}"
+    },
+    {
+      "rulename": "moreThanThreeSameSpecialCharacter",
+      "rule": "Must not have more than 3 same Special Character",
+      "pattern": "(?!.*?([\\\\#?!@$%^&*-])\\1{3})(?=.*?[\\\\#?!@$%^&*-]){3,50}"
+    }
+  ]
+}

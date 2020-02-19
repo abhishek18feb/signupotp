@@ -1,20 +1,19 @@
 import React, {Component, PureComponent} from 'react';
-import SignupView from '../../../views/signup/Signup';
 import DSUInputField from '../../common/DSUInputField';
 import DSUButton from '../../common/DSUButton';
 import {connect} from 'react-redux';
 import * as actions from '../../../store/actions';
-import OtpInput from 'react-otp-input';
-
 //import FormValidator from '../../../utils/FormValidator';
+import DSUFormPasswordField from '../../common/DSUFormPasswordField';
 
-class EmailOtp extends Component {
+class CPasswordComponent extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
             emailOrphone: "",
             otp: "",
+            otpdisabled:true,
             validation: {
                 validEmailOrPhone:"",
                 validOtp:""
@@ -38,7 +37,7 @@ class EmailOtp extends Component {
         // }
     };
     submitEmailOrPhone = () =>{
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.state.emailOrphone) || this.state.emailOrphone.match(/^\d{10}$/))
+        if (/[_A-Za-z0-9\-]+(\.[_A-Za-z0-9\-]+)*@([A-Za-z0-9\-])+(\.[A-Za-z0-9\-]+)*((\.[A-Za-z0-9]{2,})|(\.[A-Za-z0-9]{2,}\.[A-Za-z0-9]{2,}))/.test(this.state.emailOrphone) || this.state.emailOrphone.match(/^\d{10}$/))
         {
             let newValidationState = {...this.state.validation, validEmailOrPhone:""}
             this.setState((prevState) => {
@@ -57,7 +56,8 @@ class EmailOtp extends Component {
     }
 
     submitOtp = () =>{
-        console.log(this.state.otp)
+         this.props.SendOtpBackend({otp:this.state.otp})
+        //console.log(this.state.otp)
     }
     handleChangeOtp = otpdig =>{
         // console.log(otpdig)
@@ -68,91 +68,70 @@ class EmailOtp extends Component {
             this.setState((prevState) => {
                 return {otp: otpdig};
             });
+            if(otpdig.length==6){
+                this.setState((prevState)=>{
+                    return {otpdisabled:false}
+                });
+            }else{
+                this.setState((prevState)=>{
+                    return {otpdisabled:true}
+                });
+            }
         }
         this.forceUpdate()
     }
     render(){
      return(
          <React.Fragment>
-             <SignupView>
                     <div className="row">
                         <div className="col-md-3 col-sm-3"></div>
                         <h4 className="col-md-6 col-sm-6" style={{color:"#0062cc",marginTop:"2%"}}>Sign up!</h4>
                         <div className="col-md-3 has-success col-sm-3">                           
-                            <img className="img-fluid pull-right" style={{marginTop:"5%"}} src="./AIG_logo.png"/>
+                            <img className="img-fluid pull-right" style={{marginTop:"5%"}} src="./aig-logo-blue.png"/>
                         </div>
                       
                         <div className=" col-md-12 col-sm-12">
-                            <span>Provide your email or mobile phone </span>
+                            <span>Provide Requested details below.</span>
                             <hr />
                         </div>
                     </div>
                     <div className="row">
                         <div className=" col-md-12 col-sm-12">
-                            <label className="control-label col-md-12"  style={{paddingLeft: "0px"}}>Email or Phone</label>
+                            <label className="control-label col-md-12"  style={{paddingLeft: "0px"}}>Enter Password</label>
                             <DSUInputField  type = "text" className = "form-control col-md-10" 
                                 style={{display: "inline",marginRight:"3px"}}  
-                                name ="emailOrphone" value={this.state.emailOrphone} handleChange={this.handleChange} />
-                            <DSUButton className="btn btn-default col-md-1" type="button" handleSubmit={this.submitEmailOrPhone} 
-                            disabled={this.props.sendDisable}><i className="fa fa-paper-plane-o" aria-hidden="true"></i></DSUButton>
-                            {this.props.receiveEmailResponseMsg}
-                            <span className="error">{this.state.validation.validEmailOrPhone}</span>
-                            <br/>
-                            <label className="control-label  col-md-12" style={{paddingLeft: "0px"}}>One Time Passcode</label>
+                                name ="newpassword"  />
+                            <label className="control-label  col-md-12" style={{paddingLeft: "0px"}}>Retype password</label>
                             <br />
-                            {/* <DSUInputField type="text" name="number" className="form-control"  style={{width: "13%", display: "inline"}}/>
-                            <DSUInputField type="text" title="Only digits" className="form-control"  style={{width: "13%",display: "inline",paddingLeft:"10px",marginLeft:"1px"}} />
-                            <DSUInputField type="text" title="Only digits" className="form-control"  style={{width: "13%",display: "inline",marginLeft:"1px"}} />
-                            <DSUInputField type="text" title="Only digits" className="form-control"  style={{width: "13%",display: "inline",marginLeft:"1px"}} />
-                            <DSUInputField type="text" title="Only digits" className="form-control"  style={{width: "13%",display: "inline",marginLeft:"1px"}} />
-                            <DSUInputField type="text" title="Only digits" className="form-control"  style={{width: "13%",display: "inline",marginLeft:"1px",marginRight:"3px"}} /> */}
                             <div className="form-inline">
-                                <div className="form-group">
-                                    <OtpInput
-                                        onChange={otp => {this.handleChangeOtp(otp)}}
-                                        numInputs={6}
-                                        separator={<span>-</span>}
-                                        //isInputNum={true}
-                                        value={this.state.otp}
-                                        inputStyle="form-control otpinput"
-                                        
-                                    />
-                                </div>
+                            <DSUFormPasswordField  type = "password" className = "form-control col-md-10" style={{display: "inline",marginRight:"3px"}}
+                                name ="password"/>
                                 <DSUButton className="btn btn-default col-md-1" 
-                                    disabled={this.props.otpDisable}
+                                    disabled={this.state.otpdisabled}
                                     type="button"
                                     handleSubmit={this.submitOtp} 
                                     ><i className="fa fa-external-link" aria-hidden="true"></i>
                                 </DSUButton>
                             </div>
-                            
-                            
-                            
-                            
                         </div>
-
                     </div>
-                    <div className=" col-md-12 col-sm-12" style={{textAlign: "left",fontSize: "95%"}}>
-                        <br/> Already have a account! Simply <a href="/login"><u>Sign in</u></a>
+                    <div className=" col-md-12 col-sm-12" style={{fontSize: "80%"}}>
+                        1. Choose a Password.
+                        <br/>2. Retype of password and save your application
                         <hr />
                     </div>
                     <div className=" col-md-12 col-sm-12" style={{fontSize: "80%"}}>
-                        1. Enter your SMS enabled phone or Email address that you can access now for one time passcode.
-                        <br/>2. Save your application by entering the received code
+                        For your password to meet the minimum complexity criteria, ensure that it's a minimum of 8 characters in length 
+                        with a combination of Upper Case Alphabet,Lower Case Alphabet, Numeric and Special Character
                         <hr />
                     </div>
-                    <div className=" col-md-12 col-sm-12" style={{fontSize: "80%"}}>
-                        Your details are used oly for login and identification purpose. if you provide a phone number, ensure that you are able to receive text message. <u>Operator change may apply</u>
-                        <hr />
-                    </div>
-             </SignupView>
          </React.Fragment>
      )   
     }
 }
 const mapStateToProps = state =>{
     return {
-        receiveEmailOtpResponse: state.signupotp.receiveEmailOtpResponse,
+        receiveOtpResponseMsg: state.signupotp.receiveOtpResponseMsg,
         receiveEmailResponseMsg: state.signupotp.receiveEmailResponseMsg,
         sendDisable: state.signupotp.sendDisable,
         otpDisable: state.signupotp.otpDisable
@@ -160,9 +139,10 @@ const mapStateToProps = state =>{
 }
 const mapDispatchToProps = dispatch=>{
     return{
-        SendEmailBackend :(RequestData)=>dispatch(actions.sendEmailBackend(RequestData))
+        SendEmailBackend :(RequestData)=>dispatch(actions.sendEmailBackend(RequestData)),
+        SendOtpBackend :(RequestData)=>dispatch(actions.sendOtpBackend(RequestData))
     }
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps) (EmailOtp)
+export default connect(mapStateToProps, mapDispatchToProps) (CPasswordComponent)

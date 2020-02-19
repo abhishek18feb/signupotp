@@ -2,5 +2,6 @@ export {
     sendEmailBackend,
     receiveEmailSuccess,
     receiveEmailFail,
-    disableSignupOTPEmailSendButton
+    disableSignupOTPEmailSendButton,
+    sendOtpBackend
 } from './signupotp'
